@@ -10,7 +10,7 @@ O problema em questão é prever os preços das casas de uma cidade ou subúrbio
 Cada registro no banco de dados descreve um subúrbio ou cidade de Boston. Os dados foram retirados da Standard Metropolitan Statistical Area (SMSA) de Boston em 1970. Informações detalhadas sobre os atributos podem ser encontradas abaixo.
 
 # Informações dos atributos (em ordem):
-CRIM: taxa de criminalidade per capita por cidade.
+CRIM: taxa de criminalidade per capita por cidade./n
 ZN: proporção de terras residenciais zoneadas para lotes com mais de 25.000 pés quadrados (sq.ft.).
 INDUS: proporção de acres de negócios não varejistas por cidade.
 CHAS: variável fictícia do rio Charles (se o lote faz fronteira com o rio, é igual a um; caso contrário, zero).
