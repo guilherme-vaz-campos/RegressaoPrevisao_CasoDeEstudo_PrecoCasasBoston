@@ -36,3 +36,10 @@ LSTAT: porcentagem da população de mais baixo status.
 
 MEDV: valor da mediana de casas ocupadas pelo proprietário em milhares de dólares.
 
+# Definição de melhor modelo para Previsão do MEDV
+
+Para definirmos o melhor modelo, nós exploramos o serviço de ML Automatizado no Azure Machine Learning.
+Na ferramenta nós subimos o banco Boston.csv seguindo as orientações do site: https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html
+Fizemos algumas alterações em relação as orientações do site da Microsoft, como usar todos os modelos disponíveis (duranção de 6 horas para treinamento dos modelos) e também não configuramos os limites.
+Com isto, nesta configuração, o melhor modelo foi aquele que utilizou o algoritmo VotingEnsemble, com "Erro de quadrado de média de raiz normalizado" de 0.06007.
+Anexamos os arquivos gerados neste laboratório (JSON, PYTHON) aqui neste repositório.
