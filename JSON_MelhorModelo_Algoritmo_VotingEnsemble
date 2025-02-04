@@ -1,0 +1,302 @@
+{
+    "runId": "lab_automl_regressao_previsao_precos_casas_boston_326",
+    "runUuid": "99191757-bf26-44be-811f-5bb2f0ab0dd3",
+    "parentRunUuid": "80c329f0-f0a1-4667-b75b-5517300dc98c",
+    "rootRunUuid": "80c329f0-f0a1-4667-b75b-5517300dc98c",
+    "target": "Serverless",
+    "status": "Completed",
+    "parentRunId": "lab_automl_regressao_previsao_precos_casas_boston",
+    "dataContainerId": "dcid.lab_automl_regressao_previsao_precos_casas_boston_326",
+    "createdTimeUtc": "2025-02-04T02:58:04.4601683+00:00",
+    "startTimeUtc": "2025-02-04T02:58:24.061Z",
+    "endTimeUtc": "2025-02-04T02:59:54.657Z",
+    "error": null,
+    "warnings": null,
+    "tags": {
+        "_aml_system_azureml.automlComponent": "AutoML",
+        "mlflow.source.type": "JOB",
+        "mlflow.source.name": "automl_driver.py",
+        "_aml_system_codegen": "completed",
+        "_aml_system_automl_is_child_run_end_telemetry_event_logged": "True",
+        "model_explain_run_id": "lab_automl_regressao_previsao_precos_casas_boston_ModelExplain",
+        "model_explanation": "True"
+    },
+    "properties": {
+        "runTemplate": "automl_child",
+        "pipeline_id": "__AutoML_Ensemble__",
+        "pipeline_spec": "{\"pipeline_id\":\"__AutoML_Ensemble__\",\"objects\":[{\"module\":\"azureml.train.automl.ensemble\",\"class_name\":\"Ensemble\",\"spec_class\":\"sklearn\",\"param_args\":[],\"param_kwargs\":{\"automl_settings\":\"{'task_type':'regression','primary_metric':'normalized_root_mean_squared_error','verbosity':20,'ensemble_iterations':15,'ensemble_download_models_timeout_sec':300,'is_timeseries':False,'subscription_id':'46aed378-c511-43c4-b326-1dd310ee76b4','time_column_name':None,'grain_column_names':None}\",\"ensemble_run_id\":\"lab_automl_regressao_previsao_precos_casas_boston_326\",\"experiment_name\":\"ml_previsao_precos_casas_boston\",\"workspace_name\":\"Lab_AI_900_GVC\",\"subscription_id\":\"46aed378-c511-43c4-b326-1dd310ee76b4\",\"resource_group_name\":\"Lab_AI_900\"}}]}",
+        "training_percent": "100",
+        "predicted_cost": null,
+        "iteration": "326",
+        "_aml_system_scenario_identification": "Remote.Child",
+        "_azureml.ComputeTargetType": "amlctrain",
+        "_azureml.ClusterName": "Serverless",
+        "ContentSnapshotId": "85b7c26d-9dac-44c8-bd96-924ba07b9459",
+        "ProcessInfoFile": "azureml-logs/process_info.json",
+        "ProcessStatusFile": "azureml-logs/process_status.json",
+        "run_preprocessor": "",
+        "run_algorithm": "VotingEnsemble",
+        "ensembled_iterations": "[154, 120, 100, 18, 40]",
+        "ensembled_algorithms": "['RandomForest', 'XGBoostRegressor', 'XGBoostRegressor', 'DecisionTree', 'XGBoostRegressor']",
+        "ensembled_run_ids": "['lab_automl_regressao_previsao_precos_casas_boston_154', 'lab_automl_regressao_previsao_precos_casas_boston_120', 'lab_automl_regressao_previsao_precos_casas_boston_100', 'lab_automl_regressao_previsao_precos_casas_boston_18', 'lab_automl_regressao_previsao_precos_casas_boston_40']",
+        "ensemble_weights": "[0.26666666666666666, 0.06666666666666667, 0.3333333333333333, 0.13333333333333333, 0.2]",
+        "best_individual_pipeline_score": "0.06270656399520094",
+        "best_individual_iteration": "154",
+        "model_output_path": "outputs/model.pkl",
+        "conda_env_data_location": "aml://artifact/ExperimentRun/dcid.lab_automl_regressao_previsao_precos_casas_boston_326/outputs/conda_env_v_1_0_0.yml",
+        "model_data_location": "aml://artifact/ExperimentRun/dcid.lab_automl_regressao_previsao_precos_casas_boston_326/outputs/model.pkl",
+        "model_size_on_disk": "1342946",
+        "scoring_data_location": "aml://artifact/ExperimentRun/dcid.lab_automl_regressao_previsao_precos_casas_boston_326/outputs/scoring_file_v_1_0_0.py",
+        "scoring_data_location_v2": "aml://artifact/ExperimentRun/dcid.lab_automl_regressao_previsao_precos_casas_boston_326/outputs/scoring_file_v_2_0_0.py",
+        "scoring_data_location_pbi": "aml://artifact/ExperimentRun/dcid.lab_automl_regressao_previsao_precos_casas_boston_326/outputs/scoring_file_pbi_v_1_0_0.py",
+        "model_exp_support": "True",
+        "pipeline_graph_version": "1.0.0",
+        "model_name": "labautomlregres326",
+        "score": "0.060074015289937055",
+        "score_table": "NaN",
+        "run_properties": "estimators=[('154', Pipeline(memory=None, steps=[('standardscalerwrapper', StandardScalerWrapper(copy=True, with_mean=False, with_std=True",
+        "pipeline_script": "{\"pipeline_id\":\"__AutoML_Ensemble__\",\"objects\":[{\"module\":\"azureml.train.automl.ensemble\",\"class_name\":\"Ensemble\",\"spec_class\":\"sklearn\",\"param_args\":[],\"param_kwargs\":{\"automl_settings\":\"{'task_type':'regression','primary_metric':'normalized_root_mean_squared_error','verbosity':20,'ensemble_iterations':15,'ensemble_download_models_timeout_sec':300,'is_timeseries':False,'subscription_id':'46aed378-c511-43c4-b326-1dd310ee76b4','time_column_name':None,'grain_column_names':None}\",\"ensemble_run_id\":\"lab_automl_regressao_previsao_precos_casas_boston_326\",\"experiment_name\":\"ml_previsao_precos_casas_boston\",\"workspace_name\":\"Lab_AI_900_GVC\",\"subscription_id\":\"46aed378-c511-43c4-b326-1dd310ee76b4\",\"resource_group_name\":\"Lab_AI_900\"}}]}",
+        "training_type": "train_valid",
+        "fit_time": "45",
+        "goal": "normalized_root_mean_squared_error_min",
+        "primary_metric": "normalized_root_mean_squared_error",
+        "errors": "{}",
+        "onnx_model_resource": "{}",
+        "dependencies_versions": "{\"azureml-dataset-runtime\": \"1.59.0\", \"azureml-training-tabular\": \"1.59.0\", \"azureml-core\": \"1.59.0\", \"azureml-automl-core\": \"1.59.0\", \"azureml-telemetry\": \"1.59.0\", \"azureml-mlflow\": \"1.59.0.post1\", \"azureml-dataprep-rslex\": \"2.22.5\", \"azureml-train-automl-client\": \"1.59.0\", \"azureml-responsibleai\": \"1.59.0\", \"azureml-interpret\": \"1.59.0\", \"azureml-train-automl-runtime\": \"1.59.0\", \"azureml-dataprep\": \"5.1.6\", \"azureml-dataprep-native\": \"41.0.0\", \"azureml-train-restclients-hyperdrive\": \"1.59.0\", \"azureml-inference-server-http\": \"1.4.0\", \"azureml-pipeline-core\": \"1.59.0\", \"azureml-automl-runtime\": \"1.59.0\", \"azureml-train-core\": \"1.59.0\", \"azureml-defaults\": \"1.59.0\", \"azureml-train-automl\": \"1.59.0\"}",
+        "num_cores": "4",
+        "num_logical_cores": "4",
+        "peak_memory_usage": "1845720",
+        "vm_configuration": "x86_64",
+        "core_hours": "0.008407125555555556",
+        "feature_skus": "automatedml_sdk_guardrails"
+    },
+    "parameters": {},
+    "services": {},
+    "inputDatasets": [],
+    "outputDatasets": [],
+    "runDefinition": {
+        "script": "automl_driver.py",
+        "useAbsolutePath": true,
+        "arguments": [],
+        "sourceDirectoryDataStore": null,
+        "framework": "Python",
+        "communicator": "None",
+        "target": "Serverless",
+        "autoClusterComputeSpecification": {
+            "instanceSize": "Standard_DS3_v2",
+            "instancePriority": "Dedicated",
+            "osType": null,
+            "location": null,
+            "runtimeVersion": null
+        },
+        "dataReferences": {},
+        "data": {},
+        "outputData": {},
+        "datacaches": [],
+        "jobName": null,
+        "maxRunDurationSeconds": null,
+        "nodeCount": 1,
+        "maxNodeCount": 1,
+        "instanceTypes": [],
+        "priority": null,
+        "credentialPassthrough": false,
+        "identity": null,
+        "environment": {
+            "name": "AzureML-ai-ml-automl",
+            "version": "15",
+            "assetId": "azureml://registries/azureml/environments/AzureML-ai-ml-automl/versions/15",
+            "autoRebuild": false,
+            "python": {
+                "interpreterPath": null,
+                "userManagedDependencies": true,
+                "condaDependencies": null,
+                "baseCondaEnvironment": null
+            },
+            "environmentVariables": {},
+            "docker": {
+                "baseImage": null,
+                "platform": {
+                    "os": "Linux",
+                    "architecture": "amd64"
+                },
+                "baseDockerfile": null,
+                "buildContext": {
+                    "locationType": "storageAccount",
+                    "location": "https://amlwlrt4use201.blob.core.windows.net/azureml-1c26fcc5-2193-58f9-b776-45b53efee6b9/context",
+                    "dockerfilePath": "Dockerfile"
+                },
+                "baseImageRegistry": null
+            },
+            "spark": {
+                "repositories": [],
+                "packages": [],
+                "precachePackages": true
+            },
+            "inferencingStackVersion": null
+        },
+        "history": {
+            "outputCollection": true,
+            "directoriesToWatch": [
+                "logs"
+            ],
+            "enableMLflowTracking": true
+        },
+        "spark": {
+            "configuration": {}
+        },
+        "parallelTask": {
+            "maxRetriesPerWorker": 0,
+            "workerCountPerNode": 1,
+            "terminalExitCodes": null,
+            "configuration": {}
+        },
+        "amlCompute": {
+            "name": "Serverless",
+            "vmSize": null,
+            "retainCluster": false,
+            "clusterMaxNodeCount": 1
+        },
+        "aiSuperComputer": {
+            "instanceType": "D2",
+            "imageVersion": null,
+            "location": null,
+            "aiSuperComputerStorageData": null,
+            "interactive": false,
+            "scalePolicy": null,
+            "virtualClusterArmId": null,
+            "tensorboardLogDirectory": null,
+            "sshPublicKey": null,
+            "sshPublicKeys": null,
+            "enableAzmlInt": true,
+            "priority": "Medium",
+            "slaTier": "Standard",
+            "userAlias": null
+        },
+        "kubernetesCompute": {
+            "instanceType": null
+        },
+        "tensorflow": {
+            "workerCount": 0,
+            "parameterServerCount": 0
+        },
+        "mpi": {
+            "processCountPerNode": 0
+        },
+        "pyTorch": {
+            "communicationBackend": null,
+            "processCount": null
+        },
+        "hdi": {
+            "yarnDeployMode": "None"
+        },
+        "containerInstance": {
+            "region": null,
+            "cpuCores": 2,
+            "memoryGb": 3.5
+        },
+        "exposedPorts": null,
+        "docker": {
+            "useDocker": true,
+            "sharedVolumes": true,
+            "shmSize": "2g",
+            "arguments": []
+        },
+        "cmk8sCompute": {
+            "configuration": {}
+        },
+        "commandReturnCodeConfig": {
+            "returnCode": "Zero",
+            "successfulReturnCodes": []
+        },
+        "environmentVariables": {
+            "AUTOML_SDK_RESOURCE_URL": "https://aka.ms/automl-resources/"
+        },
+        "applicationEndpoints": {},
+        "parameters": []
+    },
+    "logFiles": {
+        "logs/azureml/azureml_automl-child.log": "https://labai900gvc0976531856.blob.core.windows.net/azureml/ExperimentRun/dcid.lab_automl_regressao_previsao_precos_casas_boston_326/logs/azureml/azureml_automl-child.log?sv=2019-07-07&sr=b&sig=22pHGtN8%2FqWkgQA%2BB4SWJRYIOYXb%2BPOXiSs1NOEY%2F3k%3D&skoid=48e1ec28-539d-4786-a106-7d9149c41ef1&sktid=8fe253de-0536-449f-ae77-ba412f8a88b3&skt=2025-02-03T16%3A08%3A29Z&ske=2025-02-05T16%3A18%3A29Z&sks=b&skv=2019-07-07&st=2025-02-04T16%3A46%3A31Z&se=2025-02-05T00%3A56%3A31Z&sp=r",
+        "logs/azureml/azureml_automl.log": "https://labai900gvc0976531856.blob.core.windows.net/azureml/ExperimentRun/dcid.lab_automl_regressao_previsao_precos_casas_boston_326/logs/azureml/azureml_automl.log?sv=2019-07-07&sr=b&sig=tkTS9XAK89TdX9z3uWo9KVEPV8ZsdRf0%2FQsSn6o7%2BqE%3D&skoid=48e1ec28-539d-4786-a106-7d9149c41ef1&sktid=8fe253de-0536-449f-ae77-ba412f8a88b3&skt=2025-02-03T16%3A08%3A29Z&ske=2025-02-05T16%3A18%3A29Z&sks=b&skv=2019-07-07&st=2025-02-04T16%3A46%3A31Z&se=2025-02-05T00%3A56%3A31Z&sp=r"
+    },
+    "jobCost": {
+        "chargedCpuCoreSeconds": 352,
+        "chargedCpuMemoryMegabyteSeconds": null,
+        "chargedGpuSeconds": null,
+        "chargedNodeUtilizationSeconds": 9059.55041
+    },
+    "revision": 21,
+    "runTypeV2": {
+        "orchestrator": "Execution",
+        "traits": [
+            "automl",
+            "Remote.Child",
+            "scriptRun",
+            "remote",
+            "AlmostCommonRuntime",
+            "CommonRuntime"
+        ],
+        "attribution": "AutoML",
+        "computeType": "AmlcTrain"
+    },
+    "settings": {},
+    "computeRequest": {
+        "nodeCount": 1,
+        "gpuCount": 0
+    },
+    "compute": {
+        "target": "Serverless",
+        "targetType": "amlcompute",
+        "vmSize": null,
+        "instanceType": null,
+        "instanceCount": 1,
+        "gpuCount": 0,
+        "priority": null,
+        "region": null,
+        "armId": null,
+        "properties": null
+    },
+    "createdBy": {
+        "userObjectId": "6878cd38-1f63-4e2e-8e73-52ffe1d9382a",
+        "userPuId": "1003200442CAD5E3",
+        "userIdp": "live.com",
+        "userAltSecId": "1:live.com:00018121A6F20653",
+        "userIss": "https://sts.windows.net/8fe253de-0536-449f-ae77-ba412f8a88b3/",
+        "userTenantId": "8fe253de-0536-449f-ae77-ba412f8a88b3",
+        "userName": "Guilherme Vaz de Campos",
+        "upn": null
+    },
+    "computeDuration": "00:01:30.5955041",
+    "effectiveStartTimeUtc": null,
+    "runNumber": 1738637884,
+    "rootRunId": "lab_automl_regressao_previsao_precos_casas_boston",
+    "experimentId": "8d1c0922-00c4-4ea8-82cd-6a1e9f2f6979",
+    "userId": "6878cd38-1f63-4e2e-8e73-52ffe1d9382a",
+    "statusRevision": 6,
+    "currentComputeTime": null,
+    "lastStartTimeUtc": null,
+    "lastModifiedBy": {
+        "userObjectId": "6878cd38-1f63-4e2e-8e73-52ffe1d9382a",
+        "userPuId": "1003200442CAD5E3",
+        "userIdp": "live.com",
+        "userAltSecId": "1:live.com:00018121A6F20653",
+        "userIss": "azureml",
+        "userTenantId": "8fe253de-0536-449f-ae77-ba412f8a88b3",
+        "userName": "Guilherme Vaz de Campos",
+        "upn": null
+    },
+    "lastModifiedUtc": "2025-02-04T03:08:37.2855419+00:00",
+    "duration": "00:01:30.5955041",
+    "inputs": {
+        "training_data": {
+            "assetId": "azureml://locations/eastus2/workspaces/4c6fafc2-de53-43e7-8807-c2a68cdbb941/data/Boston_casas/versions/1",
+            "type": "MLTable"
+        }
+    },
+    "outputs": {
+        "mlflow_log_model_274128187": {
+            "assetId": "azureml://locations/eastus2/workspaces/4c6fafc2-de53-43e7-8807-c2a68cdbb941/models/azureml_lab_automl_regressao_previsao_precos_casas_boston_326_output_mlflow_log_model_274128187/versions/1",
+            "type": "MLFlowModel"
+        }
+    },
+    "currentAttemptId": 1
+}
